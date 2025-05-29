@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaijanath's Portfolio</title>
+  <!-- Link Style sheet  -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+  <!-- ---- Font Awesome ----- -->
+  <script src="https://kit.fontawesome.com/dbf3e55944.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+      <nav>
+        <img src="/Images/logo5.jpeg" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#mywork">My Work</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <h2>Hi, It's Me</h2>
+        <h1><span>Vaijanath</span> <span>Powade</span></h1>
+        <h2>From Navi Mumbai</h2>
+        <h3>I'm a <span class="multiple-text"></span></h3>
+      </div>
+    </div>
+
+  <!-- -----  About Section start from here ---- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="/Images/user.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>My name is Vaijanath Powade I belong to Maharashtra, India.
+            Currently, I am pursuing a Master's in Computer Application at the Bharati Vidhyapeeth Institute of Management and Information Technology Navi Mumbai which is afflicted by Mumbai University Mumbai. Apart from I have done a Bachelor Degreee in Agril Engg from Vasantrao Naik Marathwada Agricultural University Parbhani.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+            <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+            <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span><b>Languages :</b></span><br>  Core  Java, OOPS, SQL, DBMS, HTML, CSS, React, PowerBI
+              </li>
+              <li><span><b>UI/UX Developement :</b></span><br>As a UI UX designer, I am passionate about designing
+                beautiful, intuitive interfaces that help people be more productive.</li>
+              <li><span><b>Web Development :</b></span><br>I am a passionate Frontend Developer with a strong foundation in modern web technologies. Since 2023, I have also been exploring Full Stack Development. I build clean, responsive, and user-friendly websites using the latest tools, languages, and frameworks. I focus on writing robust code and continuously improving my skills in both Frontend and Backend development..</li>
+              <li><span><b>Software Development:</b></span><br>I am a passionate Software Developer since 2022, skilled in Java, React, SQL, HTML, CSS, and JavaScript. I focus on building efficient, scalable, and user-friendly applications using modern tools and frameworks to deliver high-quality software solutions..</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span><b>01/2025 - 04/2025</b></span><br><b><span style="color:rgb(222, 243, 31)">&#10148 &nbsp</span></b>
+                Internship at Unipolar Technologies Pvt. Ltd. • Mumbai <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (React Developer Intern)
+              <li><span><b>01/2024 - 04/2024</b></span><br><b><span style="color:rgb(222, 243, 31)">&#10148 &nbsp</span></b>  Programming in Java By NPTEL 
+                from IIT Kharagpur</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span><b>Currently Pursuing</b></span><br>Bharati Vidhyapeeth Institute of Management and Information Technology, Navi Mumbai
+              <br>Master's in Computer Application (MCA) |2023 - 2025|</li>
+              <li><span><b>2021</b></span><br>Vasantrao Naik Marathwada Agricultural University, Parbhani
+               <br>Bachelors of Technology (B.Tech Agril Engg)-|2017 – 2021|</li>
+              <li><span><b>2017</b></span><br>Priyadarshni Jr. College, Latur<br> Higher Secondary Certificate (HSC)-|2017|</li>
+              <li><span><b>2015</b></span><br>hri Shivaji Vidhyamandir High school, Latur <br>Secondary School Certificate (SSC)-|2015|</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----  About Section end here ---- -->
+
+  <!-- -------  Services Section start from here  ------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>I am a Frontend Developer working since 2023 and Full Stack Developer since 2023. We design good,
+            beautiful, robust, and responsive websites with the latest languages and frameworks. I do work with good
+            knowledge of Frontend & Full-Stack development.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-crop"></i>
+          <h2>WordPress & UI/UX Design</h2>
+          <p>I am a developer working with WordPress since 2024, and we also design good sites with the elementor and
+            robust themes. I am truly passionate about WordPress development.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>Software Development</h2>
+          <p>I'm passionate about creating quality products that meet all of the customer's needs and am seeking an
+            entry-level assignment as a Software Development Engineer with an organisation of high repute. </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------  Services Section end here  ------- -->
+
+  <!-- -------  Portfolio Or My work Section start from here  ------- -->
+  <div id="mywork">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="/Images/work-1.png" alt="">
+          <div class="layer">
+            <h3>Web Application</h3>
+            <p>Here I have to make a website full-stack web development project which is very attractive and responsive.
+              I use website-making HTML, CSS, JavaScript, MongoDB, React.js, and Node.js that gives a good looking you
+              can use this type of website for e-commerce, education, and for self. In web applications, we use the
+              latest languages and frameworks. </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="/Images/work.png" alt="">
+          <div class="layer">
+            <h3>Frontend Design & Developement </h3>
+            <p>I have made food Food_Ordaring_Frontend_Website this project is based on frontend development which is
+              fully responsive and beautiful that use languages HTML, CSS, and JavaScript, and in asset we have images
+              that we download from the internet and attractive color that look robust. </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="/Images/work-3.png" alt="">
+          <div class="layer">
+            <h3>WordPress website Design</h3>
+            <p>In this project, I have used WordPress. We the WordPress website project we made through the XAMPP Server
+              and WordPress CMS in WordPress cms we use Elementar, downloaded images, and robust themes. In the XAMPP
+              server, we have required Apache and MySQL servers to run on internet. And we also use plugins, image
+              galleries, and sliders. </p>
+          </div>
+        </div>
+      </div>
+      <a href="#mywork" class="btn">See More</a>
+    </div>
+  </div>
+  <!-- ------- Portfolio Or My work section end here --------  -->
+
+  <!-- ------- Contact section start from here --------  -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-regular fa-envelope"></i></i>vaijanath2605@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 703051607</p>
+          <div class="social-icons">
+            <a href="https://github.com/vaijanath26"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/in/vaijanath-powade-bb9093298"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/vaijanath_26"><i
+                class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i
+                class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="/Images/vaijanath_powade (2).pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="Enter Your Name" required><br>
+            <input type="email" name="email" placeholder="Enter Your E-mail" required><br>
+            <textarea name="message" rows="6" placeholder="Write Your Messages"></textarea><br>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Portfolio made with <i class="fa-sharp fa-solid fa-heart"></i> by Vaijanath Powade. All rights
+        reserved</p>
+    </div>
+  </div>
+
+
+  <!-- -------  Java Script Section start from here -------- -->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+  <!-- -------  Java Script Section end  here -------- -->
+
+
+  <!-- Start Google sheet Script code  -->
+  <script>
+    // in scriptURl we paste Google sheet extention sheet code which we get after deploy. 
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwjGt912CkJ4PGBDF6rcwv1I95ytqQxmM9U23oQ6yGIL3Li4RKz10GIWnFZjiik26VJ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent Successfully!"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <!-- End Google sheet Script code  -->
+
+  <!-- Here Start we use aoto reneme the role  -->
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+  <script>
+    var type = new Typed(".multiple-text", {
+      strings: ["Web Developer", "Software Developer"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true
+    })
+  </script>
+  <!-- Here End we use aoto reneme the role  -->
+</body>
+
+</html>
